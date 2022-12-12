@@ -65,8 +65,8 @@ button {
   color: #ffffff;
   text-align: center;
   padding: 4px 8px;
-  border-radius: 6px;
-  border: .6px solid gray;
+  border-radius: 8px;
+  border: 1px solid  rgb(169, 169, 169);
   top: 130px;
   left: 50%;
   transform: translate(-50%, -50%);
