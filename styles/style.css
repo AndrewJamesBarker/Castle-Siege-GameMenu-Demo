@@ -54,7 +54,17 @@ p {
   padding: 0;
 }
 
+
+/* CSS */
+
+
 button {
+  background-color: #252525;
+  font-weight: 500;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 4px 8px;
   border-radius: 6px;
   border: .6px solid gray;
   top: 130px;
@@ -62,6 +72,7 @@ button {
   transform: translate(-50%, -50%);
   position: absolute;
   z-index: 2;
+  outline: none;
 }
 
 button:hover {
