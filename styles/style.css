@@ -40,6 +40,7 @@ h1 {
   font-size: 2.4em;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
 
@@ -53,6 +54,29 @@ p {
   padding: 0;
 }
 
+button {
+  border-radius: 6px;
+  border: .6px solid gray;
+  top: 130px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:active {
+      box-shadow: 0 .2px #666;
+      transform: translateY(.2px);
+      transition-duration: .3s;
+      transform: translate(-48%, -48%);
+      position: absolute;
+    }
+
+
+
  #center {
   
   margin-left: auto;
@@ -60,13 +84,13 @@ p {
   width: 85%;
  }
 
- .container {
+ #container {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 85%;
   bottom: 0;
-  /* z-index: 1; */
+  z-index: 1;
  } 
 
  .row {
@@ -91,7 +115,7 @@ p {
   position: absolute;
   background-color: rgb(255, 255, 255, .8);
   box-shadow: 0px 0px 600px 100px white;
-  z-index: 2;
+  z-index: 1;
   animation: fogSwell 25s infinite linear;
 }
 
@@ -104,7 +128,7 @@ p {
   left: -100px;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: -10px 0px 600px 200px white;
-  z-index: 2;
+  z-index: 1;
   animation: fogSwell 25s infinite linear;
 }
 
@@ -200,7 +224,7 @@ p {
   transform: translate(-50%, -50%);
   position: absolute;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 1000px 1000 1000 white;
+  box-shadow: 0px 10px 700px 200px white;
   z-index: 2;
   animation: fogSwell 10s infinite linear;
 }
@@ -213,7 +237,7 @@ p {
   top: -80px;
   left: -100px;
   background-color: rgba(255, 255, 255);
-  box-shadow: 1 1 800px white;
+  box-shadow: 1px 1px 800px white;
   z-index: 2;
   animation: fogSwell 10s infinite linear;
 }
@@ -241,7 +265,7 @@ p {
   transform: translate(-45%, -50%);
   position: absolute;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 900px 100 100 white;
+  box-shadow: 0px 10px 900px 100px white;
   z-index: 2;
   animation: fogSwell2 18s infinite linear;
 }
@@ -254,7 +278,7 @@ p {
   top: -80px;
   left: -100px;
   background-color: rgba(255, 255, 255);
-  box-shadow: 1 1 800px white;
+  box-shadow: 1px 1px 800px white;
   z-index: 2;
   animation: fogSwell2 18s infinite linear;
 }
@@ -367,6 +391,7 @@ p {
                 /* Pacing Working! */
 
 .cartoonContainer {
+  position: relative;
   text-align: center;
   transform: scale(.2);
   margin-top: 156.5px; 
@@ -377,6 +402,7 @@ p {
 }
 
 .cartoonContainer2 {
+  position: absolute;
   animation: soldierAttack 3s infinite linear;
   text-align: center;
   transform: scale(1.2);
@@ -384,7 +410,7 @@ p {
   margin-right: min(20vw, 400px);
   margin-left: min(20vw, 400px);
   padding: 0;
-  z-index: 2;
+  
 }
 
 
@@ -436,23 +462,29 @@ p {
   position: absolute;
   width: 80em;
   height: 80em;
+  z-index: 0;
 }
 
 #cartoon2 div {
   padding: 0;
   position: absolute;
+  z-index: 2;
 }
 #cartoon2 {
+  position: absolute;
   /* position: relative; */
   
   animation: soldierMove 11s infinite linear;
  
   /* soldier-turn 4s infinite linear alternate both;       */
-  margin: 0 auto;
+
+  margin-top: -55px;
+
   padding: 0;
   position: absolute;
   width: 80em;
   height: 80em;
+  z-index: 2;
 }
 /* general rounding shaping */
 
@@ -735,6 +767,7 @@ p {
 
 
 .lance2 {
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 0.75em;
@@ -743,10 +776,11 @@ p {
   transform: rotate(180deg);
   top: 34%;
   left: 60%;
-  z-index: 2;
+  z-index: 4;
 }
 
 .lance2::after {
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 150%;
@@ -755,10 +789,11 @@ p {
   left: -50%;
   background: linear-gradient(white 80%, black 0);
   background-size: 100% 35%;
-  z-index: 2;
+  z-index: 4;
 }
 
 .lance2::before {
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 550%;
@@ -771,10 +806,11 @@ p {
   border: 0.25em solid;
   background: black;
   background-size: 100% 45%;
-  z-index: 2;
+  z-index: 4;
 }
 
 .forearm {
+  position: absolute;
   margin: 0;
   padding: 64px;
   width: 120px;
@@ -785,9 +821,10 @@ p {
   top: 792px;
   transform: rotate(95deg);
   background: black;
-  z-index: 2;
+  z-index: 4;
 }
 .hand {
+  position: absolute;
   margin: 0;
   padding: 64px;
   width: 74px;
@@ -797,11 +834,12 @@ p {
   top: 887px;
   transform: rotate(110deg);
   background: white;
-   border: .65vmin solid;
-   z-index: 2;
+  border: .65vmin solid;
+  z-index: 4;
 }
 
 .fingers {
+  position: absolute;
   margin: 0;
   padding: 64px;
   width: 35px;
@@ -815,10 +853,11 @@ p {
   border: .10vmin solid;
   background: linear-gradient(white 80%, black 0);
   background-size: 100% 25%;
-  z-index: 2;
+  z-index: 4;
 }
 
 .point2 {
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 5%;
@@ -827,10 +866,11 @@ p {
   left: 58.2%;
   top: 62.5%;
   transform: rotate(180deg);
-  z-index: 2;
+  z-index: 4;
 }
 
 .point2::after {
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 95%;
@@ -842,7 +882,7 @@ p {
   left: 0.25em;
   z-index: 2;
   background: linear-gradient(white 70%, transparent 0), linear-gradient(to right, white 46%, black 0 54%, white 0);
-  z-index: 2;
+  z-index: 4;
 }
 
 

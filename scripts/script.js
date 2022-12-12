@@ -7,11 +7,24 @@ window.onload = function() {
 //     $('.cartoonContainer2').toggle();
 // });
 
+var castleWall = document.getElementById("container");
+zIndex = true;
 var soldierAttacking = document.getElementById('cartoon2');
 
 var soldierWalking = document.getElementById('cartoon');
 
 $(soldierAttacking).hide();
+
+$('#actionButton').on('click', function(){
+    $(soldierWalking).toggle(300);
+    $(soldierAttacking).toggle(300);
+    if (zIndex === true){
+    castleWall.style.zIndex = 0;
+    zIndex = false; } else if (zIndex === false){
+    castleWall.style.zIndex = 1;
+    zIndex = true;
+    }
+});
 
 
 }
