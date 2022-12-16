@@ -16,8 +16,8 @@ var soldierWalking = document.getElementById('cartoon');
 $(soldierAttacking).hide();
 
 $('#actionButton').on('click', function(){
-    $(soldierWalking).toggle(100);
-    $(soldierAttacking).toggle(100);
+    $(soldierWalking).toggle(50);
+    $(soldierAttacking).toggle(50);
     
     if (zIndex === true){
     castleWall.style.zIndex = 0;
