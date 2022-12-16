@@ -20,7 +20,7 @@
  }
 
  
- body, div, h2, h3, h4, h5, h6, ol, p, ul {
+body, div, h2, h3, h4, h5, h6, ol, p, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -55,7 +55,7 @@ p {
 }
 
 
-/* CSS */
+/* Button */
 
 
 button {
@@ -79,14 +79,15 @@ button:hover {
   cursor: pointer;
 }
 button:active {
-      box-shadow: 0 .2px #666;
-      transform: translateY(.2px);
-      transition-duration: .3s;
-      transform: translate(-48%, -48%);
-      position: absolute;
-    }
+  box-shadow: 0 .2px #666;
+  transform: translateY(.2px);
+  transition-duration: .3s;
+  transform: translate(-48%, -48%);
+  position: absolute;
+}
 
 
+/* container and center */
 
  #center {
   
@@ -442,20 +443,8 @@ button:active {
     transform: translateX(-1320px) rotatey(0deg);
   }
 }
-/* 
-@keyframes soldierAttack {
-0% {
- transform: rotate(0deg);
-}
-100% {
-  transform: rotate(45deg);
-}
 
-} */
-/* animation: [name] [duration] [iteration-count] [direction] [timing-function] [fill-mode] [delay]; */
-
-
-
+/* Stylings of soldier */
 
 
 #cartoon div {
