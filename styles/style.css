@@ -57,6 +57,12 @@ p {
 
 /* Button */
 
+#audioPlayer {
+  position: absolute;
+  bottom: 10%;
+  left:40.5%;
+  z-index: 3;
+}
 
 button {
   background-color: #252525;
