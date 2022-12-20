@@ -4,6 +4,9 @@
 
 /* concept © Andrew Barker */
 
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap'); 
+
+
  html {
   font-family: 'Gideon Roman', cursive;
   font-size: 1em;
@@ -25,7 +28,14 @@ body, div, h2, h3, h4, h5, h6, ol, p, ul {
   padding: 0;
   font-weight: normal;
  }
-   
+
+ header {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+ }
+
 body {
   background: linear-gradient(#e66465, #9198e5); 
   height: 100vh; 
@@ -133,7 +143,7 @@ button:active {
   position: absolute;
   background-color: rgb(255, 255, 255, .8);
   box-shadow: 0px 0px 600px 100px white;
-  z-index: 1;
+  z-index: 0;
   animation: fogSwell 25s infinite linear;
 }
 
@@ -146,7 +156,7 @@ button:active {
   left: -100px;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: -10px 0px 600px 200px white;
-  z-index: 1;
+  z-index: 0;
   animation: fogSwell 25s infinite linear;
 }
 
@@ -159,7 +169,7 @@ button:active {
   left: 10px;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: -1px 0px 330px 120px white;
-  z-index: 1;
+  z-index: 0;
   animation: fogSwell 25s infinite linear;
   
 }
@@ -176,7 +186,7 @@ button:active {
   position: absolute;
   background-color: rgb(255, 255, 255, .8);
   box-shadow: 0px 0px 350px 50px white;
-  z-index: 1;
+  z-index: 0;
   animation: cloudPass 30s infinite linear;
 }
 
@@ -189,7 +199,7 @@ button:active {
   left: -100px;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: -10px 0px 300px 100px white;
-  z-index: 1;
+  z-index: 0;
   animation: cloudPass 30s infinite linear;
 }
 
@@ -202,7 +212,7 @@ button:active {
   left: 10px;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: -1px 0px 660px 240px white;
-  z-index: 1;
+  z-index: 0;
   animation: cloudPass 30s infinite linear;
   
 }
@@ -233,44 +243,44 @@ button:active {
 /* fog */
 
 .fog {
-  width: 100px;
-  height: 80px;
+  width: 1px;
+  height: 1px;
   background-color: rgb(53, 53, 53);
   border-radius: 48%;
-  top: 1090px;
+  top: 530px;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 700px 200px white;
-  z-index: 2;
-  animation: fogSwell 10s infinite linear;
+  box-shadow: 1px 1px 750px 110px white;
+  z-index: 3;
+  animation: fogSwell 12s infinite linear;
 }
 
 .fog::before {
   position: absolute;
-  width: 100px;
-  height: 160px;
+  width: 1px;
+  height: 1px;
   border-radius: 50%;
-  top: -80px;
-  left: -100px;
+  top: 400px;
+  left: -450px;
   background-color: rgba(255, 255, 255);
-  box-shadow: 1px 1px 800px white;
-  z-index: 2;
-  animation: fogSwell 10s infinite linear;
+  box-shadow: 1px 1px 800px 190px white;
+  z-index: 3;
+  animation: fogSwell 12s infinite linear;
 }
 
 .fog::after {
   position: absolute;
-  width: 100px;
-  height: 170px;
+  width: 1px;
+  height: 2px;
   border-radius: 50%;
-  top: -63px;
-  left: 10px;
+  top: 400px;
+  left: 340px;
   background-color: rgba(255, 255, 255);
-  box-shadow: -10px 10px 1000px 200px white;
-  z-index: 2;
-  animation: fogSwell 10s infinite linear;
+  box-shadow: 0px 0px 1000px 200px white;
+  z-index: 3;
+  animation: fogSwell 12s infinite linear;
 }
 
 .fog2 {
@@ -278,40 +288,40 @@ button:active {
   height: 120px;
   background-color: rgb(53, 53, 53);
   border-radius: 48%;
-  top: 1090px;
+  top: 890px;
   left: 50%;
-  transform: translate(-45%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 900px 100px white;
+  box-shadow: 0px 0px 900px 100px white;
   z-index: 2;
-  animation: fogSwell2 18s infinite linear;
+  animation: fogSwell2 15s infinite linear;
 }
 
 .fog2::before {
   position: absolute;
   width: 100px;
-  height: 190px;
+  height: 80px;
   border-radius: 50%;
-  top: -80px;
+  top: 890px;
   left: -100px;
   background-color: rgba(255, 255, 255);
-  box-shadow: 1px 1px 800px white;
+  box-shadow: 1px 1px 800px 200px white;
   z-index: 2;
-  animation: fogSwell2 18s infinite linear;
+  animation: fogSwell2 15s infinite linear;
 }
 
 .fog2::after {
   position: absolute;
-  width: 200px;
+  width: 150px;
   height: 170px;
   border-radius: 50%;
-  top: -63px;
+  top: 890px;
   left: 10px;
   background-color: rgba(255, 255, 255);
-  box-shadow: -10px 10px 1000px 200px white;
+  box-shadow: -10px 8px 1000px 200px white;
   z-index: 2;
-  animation: fogSwell2 18s infinite linear;
+  animation: fogSwell2 15s infinite linear;
   
 }
 @keyframes fogSwell {
@@ -342,6 +352,7 @@ button:active {
   z-index: -1;
   position: absolute;
   animation: moonMove 180s infinite linear;
+  top: -100px;
 }
 
 
@@ -375,7 +386,7 @@ button:active {
   border-radius: 2px;
   margin-left: 4%;
   border: 1.7px solid rgb(169, 169, 169);
-  z-index: -1;
+  z-index: 2;
  }
 
 /* displacing bricks */
@@ -403,23 +414,23 @@ button:active {
   border: 1.3px solid rgb(169, 169, 169);
   margin: 0;
   padding: 0%;
- 
+  z-index: 2;
  }
    
                 /* Pacing Working! */
 
-.cartoonContainer {
+/* .cartoonContainer {
   position: relative;
   text-align: center;
   transform: scale(.2);
-  margin-top: 156.5px; 
+  margin-top: 56.5px; 
   margin-right: min(1vw, 400px);
   margin-left: min(10vw, 400px);
   padding: 0;
   z-index: 1;
-}
+} */
 
-.cartoonContainer2 {
+/* .cartoonContainer2 {
   position: absolute;
   animation: soldierAttack 3s infinite linear;
   text-align: center;
@@ -429,7 +440,7 @@ button:active {
   margin-left: min(20vw, 400px);
   padding: 0;
   
-}
+} */
 
 
 @keyframes soldierMove {
@@ -452,6 +463,14 @@ button:active {
 
 /* Stylings of soldier */
 
+#soldierScaleControl {
+  position: relative;
+  margin-bottom: 145px;
+  transform: scale(.2);
+  margin-right: min(1vw, 400px);
+  margin-left: min(10vw, 400px);
+  z-index: 1;
+}
 
 #cartoon div {
   padding: 0;
@@ -459,39 +478,32 @@ button:active {
 }
 
 #cartoon {
-  /* position: relative; */
-  
   animation: soldierMove 11s infinite linear;
-  /* soldier-turn 4s infinite linear alternate both;       */
   margin: 0 auto;
   padding: 0;
   position: absolute;
   width: 80em;
   height: 80em;
-  z-index: 0;
+  z-index: 1;
 }
 
 #cartoon2 div {
   padding: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 #cartoon2 {
   position: absolute;
-  /* position: relative; */
-  
   animation: soldierMove 11s infinite linear;
- 
-  /* soldier-turn 4s infinite linear alternate both;       */
-
   margin-top: -55px;
-
   padding: 0;
   position: absolute;
   width: 80em;
   height: 80em;
-  z-index: 2;
+  z-index: 1;
+ 
 }
+
 /* general rounding shaping */
 
 .b {

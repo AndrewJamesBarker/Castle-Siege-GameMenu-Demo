@@ -7,7 +7,7 @@ window.onload = function() {
 //     $('.cartoonContainer2').toggle();
 // });
 
-var castleWall = document.getElementById("container");
+var soldierZIndex = document.getElementById("soldierScaleControl");
 zIndex = true;
 var soldierAttacking = document.getElementById('cartoon2');
 
@@ -20,9 +20,9 @@ $('#actionButton').on('click', function(){
     $(soldierAttacking).toggle(50);
     
     if (zIndex === true){
-    castleWall.style.zIndex = 0;
+    soldierZIndex.style.zIndex = 3;
     zIndex = false; } else if (zIndex === false){
-    castleWall.style.zIndex = 1;
+    soldierZIndex.style.zIndex = 2;
     zIndex = true;
     }
 });

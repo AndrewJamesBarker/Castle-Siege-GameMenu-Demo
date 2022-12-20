@@ -5,6 +5,7 @@
     <script src="scripts/script.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
     <title>Castle Siege</title>
 </head>
 <body id="center">
@@ -13,19 +14,18 @@
     <h1>CASTLE SIEGE</h1>
     <p>Game Menu (Demo)</p>
     <button aria-pressed="false" id="actionButton">Attack On/Off</button>
-    <audio id="audioPlayer" controls><source src="Audio/TheDarktower.mp3" type="audio/mpeg" aria-label="guitar and flute dark mysterious music ©Andrew James Barker"></audio>
+    <!-- <audio id="audioPlayer" controls><source src="Audio/TheDarktower.mp3" type="audio/mpeg" aria-label="guitar and flute dark mysterious music ©Andrew James Barker"></audio> -->
 </header>
 
 <main>
-    <div id="moonAxis">
-        <div class="moon"></div>
-    </div>
-    <div class="cloud"></div>
-    <div class="cloud2"></div>
-    <div class="fog"></div>
-    <div class="fog2"></div>
-    <div class="cartoonContainer" >
+    
+    <!-- <div class="cartoonContainer" >
         
+
+    </div> -->
+
+    <div id="container">
+    <div class="cartoonContainer"  id="soldierScaleControl">
     <div id="cartoon2">
         <div class="lance2 hb ha"></div>
         <div class="point2 r ha"></div>
@@ -45,15 +45,20 @@
         <div class="leg hb ha"></div>
         <div class="soldierBody b r hb ha"></div>
         <div class="soldierHead b hb ha"></div>
-        <div class="helmetPoint   ha"></div>
-        <div class="helmetStem b  ha"></div>
+        <div class="helmetPoint ha"></div>
+        <div class="helmetStem b ha"></div>
         <div class="helmet b hb ha"></div>
         <div class="shield b r"></div>  
     </div>
+    </div>    
 
+    <div id="moonAxis">
+        <div class="moon"></div>
     </div>
-    <div id="container">
-       
+    <div class="cloud"></div>
+    <div class="cloud2"></div>
+    <div class="fog"></div>
+    <div class="fog2"></div>
     <div class="topRow">
         <div class="brickTop"></div>
         <div class="brickTop"></div>
@@ -62,6 +67,30 @@
         <div class="brickTop"></div>
         <div class="brickTop"></div> 
         <div class="brickTop"></div> 
+    </div>
+    <div class="row">
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>  
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>
+        <div class="brick"></div>  
     </div>
     <div class="row">
         <div class="brick"></div>
