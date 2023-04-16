@@ -70,7 +70,7 @@ p {
 
 #audioPlayer {
   position: absolute;
-  bottom: -450%;
+  bottom: -440%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -84,7 +84,7 @@ button {
   padding: 4px 8px;
   border-radius: 8px;
   border: 1px solid  rgb(169, 169, 169);
-  bottom: -60px;
+  bottom: -480%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
